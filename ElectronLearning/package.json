@@ -1,0 +1,9 @@
+{
+  "name": "electron-learning",
+  "version": "0.0.0",
+  "description": "ElectronLearning",
+  "main": "app.js",
+  "author": {
+    "name": "A871734"
+  }
+}
