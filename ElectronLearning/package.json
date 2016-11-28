@@ -5,5 +5,11 @@
   "main": "app.js",
   "author": {
     "name": "A871734"
+  },
+  "dependencies": {
+    "electron": "1.4.8"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1"
   }
 }
