@@ -1,18 +1,31 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <script src="Scripts/js/angular.js"></script>
+    
+    <!--Using Less CSS Preprocessor/ Not good in Production Replace it CSS and CheckIn-->
+    <link rel="stylesheet/less" type="text/css" href="stylesheet/main.less" />
+    <script src="Scripts/js/less.js"></script>
+    
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js
-    <script>document.write(process.versions.node)</script>,
-    Chromium
-    <script>document.write(process.versions.chrome)</script>,
-    and Electron
-    <script>document.write(process.versions.electron)</script>.
+    <div>
+        <h1>Hello World!</h1>
+        <!-- All of the Node.js APIs are available in this renderer process. -->
+        We are using Node.js
+        <script>document.write(process.versions.node)</script>,
+        Chromium
+        <script>document.write(process.versions.chrome)</script>,
+        and Electron
+        <script>document.write(process.versions.electron)</script>.
+
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <hr>
+        <h1>Hello {{yourName}}!</h1>
+    </div>
 </body>
 <script>
     // You can also require other files to run in this process

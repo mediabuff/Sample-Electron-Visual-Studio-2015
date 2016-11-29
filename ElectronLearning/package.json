@@ -1,15 +1,25 @@
 {
-  "name": "electron-learning",
-  "version": "0.0.0",
-  "description": "ElectronLearning",
-  "main": "app.js",
-  "author": {
-    "name": "A871734"
-  },
-  "dependencies": {
-    "electron": "1.4.8"
-  },
-  "devDependencies": {
-    "electron": "^1.4.1"
-  }
+    "author": {
+        "name": "Rahul Potluri"
+    },
+    "build": {
+        "appId": "Potluri.Electron.Sample",
+        "app-category-type": "public.app-category-Electron-VS2015",
+        "win": {
+            "iconUrl": "Resources/Icons/icon.jpg#"
+        }
+    },
+    "dependencies": {
+        "electron": "1.4.8"
+    },
+    "description": "Learning Electron and created Sample electron basic Project in Visual Studio 2015",
+    "main": "app.js",
+    "name": "getting.started.electron.vs.2015",
+    "scripts": {
+        "pack": "build --dir",
+        "dist": "build",
+        "postinstall": "install-app-deps",
+        "start": "electron ./app --enable-logging"
+    },
+    "version": "0.0.1"
 }

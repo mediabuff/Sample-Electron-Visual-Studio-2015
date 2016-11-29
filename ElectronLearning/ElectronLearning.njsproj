@@ -34,6 +34,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Resources\Icons\icon.jpg" />
+    <Content Include="stylesheet\main.less" />
     <TypeScriptCompile Include="app.ts" />
     <Content Include="index.html" />
     <Content Include="package.json" />
@@ -41,9 +43,18 @@
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="build\" />
+    <Folder Include="stylesheet\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Icons\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Scripts\js\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Scripts\js\angular.js" />
+    <Compile Include="Scripts\js\less.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
